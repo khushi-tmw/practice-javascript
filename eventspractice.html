@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    
+    <h1>Khushii Singh </h1>
+    <button id="btn" >Hittt meee !!!!</button>
+    <script>
+        document.getElementById("btn").addEventListener("click", ()=>{alert("heyy khushi singh")})
+
+        Document.getElementById('owl').oneclick = function() {
+            alert("owl clicked")
+        }
+
+        attachEvent()
+        jQuery - on
+
+        type, timestamp, defaultPrevented
+        target, toEleent, srcElement, currentTarget,
+        clientX, clientY, screenX, screenY
+        altkey, ctrlkey, shiftkey, keyCode
+        
+        document.getElementById('images').addEventListener
+        ('click', function(e){
+            console.log("clicked inside the ul");
+            
+        }, false)
+
+        document.getElementById('owl').addEventListener
+        ('click', function(e){
+            console.log("owl clicked");
+            e.stopPropogation()
+        }, false)
+
+        document.getElementById('google').addEventListener
+        ('click',function(e){
+            e.preventDefault();
+            e.stopPropagation()
+            console.log("google clicked");
+        }, false)
+    </script>
+</body> 
+
+</html>

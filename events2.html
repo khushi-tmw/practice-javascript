@@ -1,0 +1,62 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    
+    <h1>Khushii Singh </h1>
+    <button id="btn" >Hittt meee !!!!</button>
+    <script>
+        document.getElementById("btn").addEventListener("dblclick", ()=>{alert("heyy khushi singh")})
+    </script>
+</body> 
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises with Async/Await</title>
+</head>
+<body>
+    
+    <h1>Khushii Singh</h1>
+    <button id="btn">Get a Joke!</button>
+    <p id="output">Click the button to load a joke...</p>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const output = document.getElementById("output");
+
+        // 1. Mark the function as 'async' so we can use 'await'
+        async function getJoke() {
+            try {
+                output.textContent = "Thinking of a joke...";
+
+                // 2. 'fetch()' returns a Promise. 'await' pauses code until the server responds.
+                const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+
+                // 3. Converting the response to JSON also returns a Promise!
+                const data = await response.json();
+
+                // 4. Success! Display the joke parts
+                output.textContent = `${data.setup} ➔ ${data.punchline}`;
+
+            } catch (error) {
+                // 5. 'catch' handles network errors or broken URLs smoothly
+                output.textContent = "Oops! Failed to fetch a joke ❌";
+                console.error(error);
+            }
+        }
+
+        // Trigger the function when the button is clicked
+        btn.addEventListener("click", getJoke);
+    </script>
+</body> 
+</html>
