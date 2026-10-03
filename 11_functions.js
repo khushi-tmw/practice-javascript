@@ -1,14 +1,17 @@
 
-function sayMyName(){
+// function sayMyName(){
 
-    console.log("k");
-    console.log("h");
-    console.log("u");
-    console.log("s");
-    console.log("h");
-    console.log("i");
+//     console.log("k");
+//     console.log("h");
+//     console.log("u");
+//     console.log("s");
+//     console.log("h");
+//     console.log("i");
 
-}
+// }
+
+// sayMyName()
+
 //sayMyName => reference
 // sayMyName() // => execution
 
@@ -16,41 +19,64 @@ function sayMyName(){
 //     console.log(num1 + num2);
 // }
 
-function addTwoNumbers(num1, num2){
-    // let result = num1 + num2
-    // return result
-    return num1 + num2
-}
-// addTwoNumbers(3, 7) 
-// addTwoNumbers(3, "4")
+// function addTwoNumbers(num1, num2){
+//     // let result = num1 + num2
+//     // return result
+//     return num1 + num2
+// }
+// // addTwoNumbers(3, 7) 
+// // addTwoNumbers(3, "4")
 
-// addTwoNumbers(4, "a") 
-// addTwoNumbers(4, null)
-// addTwoNumbers(4, "undefined")
+// // addTwoNumbers(4, "a") 
+// // addTwoNumbers(4, null)
+// // addTwoNumbers(4, "undefined")
 
-// const result = addTwoNumbers(3, 2)
-// console.log("Result:", result);
+// // const result = addTwoNumbers(3, 2)
+// // console.log("Result:", result);
 
-function loginUserMessage(username){
-    return '${username} just logged in'
-}
+// function loginUserMessage(username){
+//     return '${username} just logged in'
+// }
 
-// console.log(loginUserMessage("sneha"))
- console.log( );
+// // console.log(loginUserMessage("sneha"))
+//  console.log( );
  
-function CalculatePrice(...num1){
-    return num1
-}
+// function CalculatePrice(...num1){
+//     return num1
+// }
 
-// console.log(CalculatePrice(200, 400, 500));
+// // console.log(CalculatePrice(200, 400, 500));
 
-const user = {
-    username: "reena",
-    price: 299
- 
-}
+// const user = {
+//     username: "reena",
+//     price: 299
+  
+// }
 
-function handleObject(anyobject){
-    console.log('Username is ${anyobject.username} and price is ${}');
+// function handleObject(anyobject){
+//     console.log('Username is ${anyobject.username} and price is ${}');
     
+// }
+
+// const myNewArray = [200, 400, 100, 700]
+
+// function returnSecondValue(getArray){
+//     return getArray[1]
+// }
+
+// // console.log(returnSecondValue(myNewArray));
+
+// console.log(returnSecondValue([200, 2200, 600, 700]));
+
+
+
+//creating a calc 
+function add(a,b){
+    return a + b;
 }
+
+function sub(a,b){
+    return a-b;
+}
+
+let 
