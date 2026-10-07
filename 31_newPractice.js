@@ -84098,44 +84098,44 @@ const information =
 
 // console.log(`Total Diamond on page : ${count}`);
 
-const word = "F";
-const count = information.data.filter(
-    item => item.Shape === word
-).length;
+// const word = "F";
+// const count = information.data.filter(
+//     item => item.Shape === word
+// ).length;
 
-console.log(`EMERALD : ${count}`); // 2
+// console.log(`EMERALD : ${count}`); // 2
 
-const word1 = "OVAL"
-const count1 = information.data.filter(item => item.Shape === word1).length;
-console.log(`OVAL : ${count1}`);
+// const word1 = "OVAL"
+// const count1 = information.data.filter(item => item.Shape === word1).length;
+// console.log(`OVAL : ${count1}`);
 
-const word2 = "PEAR"
-const count2 = information.data.filter(item => item.Shape === word2).length;
-console.log(`PEAR : ${count2}`);
+// const word2 = "PEAR"
+// const count2 = information.data.filter(item => item.Shape === word2).length;
+// console.log(`PEAR : ${count2}`);
 
-const word3 = "MOVAL"
-const count3 = information.data.filter(item => item.Shape === word3).length;
-console.log(`MOVAL : ${count3}`);
+// const word3 = "MOVAL"
+// const count3 = information.data.filter(item => item.Shape === word3).length;
+// console.log(`MOVAL : ${count3}`);
 
-const word4 = "ROUND"
-const count4 = information.data.filter(item => item.Shape === word4).length;
-console.log(`ROUND : ${count4}`);
+// const word4 = "ROUND"
+// const count4 = information.data.filter(item => item.Shape === word4).length;
+// console.log(`ROUND : ${count4}`);
 
-const word5 = "CUSHION"
-const count5 = information.data.filter(item => item.Shape === word5).length;
-console.log(`CUSHION : ${count5}`);
+// const word5 = "CUSHION"
+// const count5 = information.data.filter(item => item.Shape === word5).length;
+// console.log(`CUSHION : ${count5}`);
 
-const word6 = "MARQUISE"
-const count6 = information.data.filter(item => item.Shape === word6).length;
-console.log(`MARQUISE : ${count6}`);
+// const word6 = "MARQUISE"
+// const count6 = information.data.filter(item => item.Shape === word6).length;
+// console.log(`MARQUISE : ${count6}`);
 
-const word7 = "RADIANT"
-const count7 = information.data.filter(item => item.Shape === word7).length;
-console.log(`ROUND : ${count7}`);
+// const word7 = "RADIANT"
+// const count7 = information.data.filter(item => item.Shape === word7).length;
+// console.log(`ROUND : ${count7}`);
 
-const word8 = "DUTCH MARQUISE"
-const count8 = information.data.filter(item => item.Shape === word8).length;
-console.log(`DUTUCH MARQUISE : ${count8}`);
+// const word8 = "DUTCH MARQUISE"
+// const count8 = information.data.filter(item => item.Shape === word8).length;
+// console.log(`DUTUCH MARQUISE : ${count8}`);
 
 
 

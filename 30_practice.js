@@ -84023,63 +84023,66 @@ console.log(`Total record on page : ${count}`);
 
 //*****************COLOR***************** */
 
-const khushi = information.data.map(data => data.Color);
+// const khushi = information.data.map(data => data.Color);
 
-const uniqueColor = [...new Set(khushi)];
-console.log(uniqueColor);
-
-
-
-const word1 = `E`;
-const num1 = information.data.filter(
-    item => item.Color === word1
-).length;
-console.log(`E : ${num1}`);
+// const uniqueColor = [...new Set(khushi)];
+// console.log(uniqueColor);
 
 
-const word2 = `D`;
-const num2 = information.data.filter(
-    item => item.Color === word2
-).length;
 
-console.log(`D : ${num2}`);
+// const word1 = `E`;
+// const num1 = information.data.filter(
+//     item => item.Color === word1
+// ).length;
+// console.log(`E : ${num1}`);
 
-const word3 = `G`
-const num3 = information.data.map(
-    item => item.Color === word3
-).length
-console.log(`G :${num3}`);
+
+// const word2 = `D`;
+// const num2 = information.data.filter(
+//     item => item.Color === word2
+// ).length;
+
+// console.log(`D : ${num2}`);
+
+// const word3 = `G`
+// const num3 = information.data.filter(
+//     item => item.Color === word3
+// ).length
+// console.log(`G :${num3}`);
+
+// const word4 = 'FANCY VIVID  PINK'
+// const num4 = information.data.filter(
+//     item => item.Color === word4
+// ).length
+// console.log(`FANCY VIVID  PINK :${num4}`);
 
 //********************SHAPES***************** */
 
-// const khushi = information.data.map(data => data.Shape);
+const khushi = information.data.map(data => data.Shape);
 
-// const uniqueShapes = [...new Set(khushi)];
-// let num = 0
-// uniqueShapes.map(() => {
-//     num++
-// })
+const uniqueShapes = [...new Set(khushi)];
+let num = 0
+uniqueShapes.map(() => {
+    num++
+})
 
-// let newcount = 0;
-//     khushi.map(() => {
-//     newcount++
-// })
+let newcount = 0;
+khushi.map(() => {
+    newcount++
+})
 
-// dat= uniqueShapes.count
-// console.log(dat)
+const shapeCounts = information.data.reduce((acc, item) => {
+  acc[item.Shape] = (acc[item.Shape] || 0) + 1;
+  return acc;
+}, {});
 
-// const shapeCounts = information.data.reduce((acc, item) => {
-//   acc[item.Shape] = (acc[item.Shape] || 0) + 1;
-//   return acc;
-// }, {});
+Object.entries(shapeCounts).forEach(([shape, count]) => {
+  console.log(`${shape}: ${count}`);
+});
 
-// Object.entries(shapeCounts).forEach(([shape, count]) => {
-//   console.log(`${shape}: ${count}`);
-// });
-
-// console.log(`Total Number of Shapes = ${newcount}`);
-// console.log(uniqueShapes);
-// console.log(`Total Number of unique Shapes is :${num}`)
+console.log(`Total Number of Shapes = ${newcount}`);
+console.log(uniqueShapes);
+console.log(`Total Number of unique Shapes is :${num}`)
 
 //******************CLARITY***************** */
 

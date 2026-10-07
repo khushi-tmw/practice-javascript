@@ -84015,14 +84015,6 @@ const information =
 
 
 
-
-
-// const khushi = information.data.map(data => data.Weight);
-
-// const uniqueWeight = [...new Set(khushi)];
-// console.log(uniqueWeight);
-
-
 const Weight1 = information.data.map(data => data.Weight)
 const uniqueWeight = [...new Set(Weight1)];
 
